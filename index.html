@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<nav class="bg-gray-300 shadow-md">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="https://placehold.co/70" alt="Logo">
+        </div>
+
+        <!-- Menu (Hidden on Mobile, Shown on MD+) -->
+        <div class="hidden md:flex flex-1 justify-center">
+            <ul class="flex space-x-8 text-black font-poppins font-semibold">
+                <li class="hover:text-yellow-700"><a href="#">Home</a></li>
+                <li class="hover:text-yellow-700"><a href="#">About</a></li>
+                <li class="hover:text-yellow-700"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Login & Signup Buttons -->
+        <div class="hidden md:flex space-x-4">
+            <button class="px-4 py-2 text-blue-600 bg-white rounded-lg font-semibold hover:bg-gray-200">
+                Login
+            </button>
+            <button class="px-4 py-2 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900">
+                Sign Up
+            </button>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button id="menu-btn" class="md:hidden text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-gray-300 py-4 space-y-4">
+        <a href="#" class="text-black hover:text-yellow-700">Home</a>
+        <a href="#" class="text-black hover:text-yellow-700">About</a>
+        <a href="#" class="text-black hover:text-yellow-700">Contact</a>
+        <button class="px-4 py-2 text-blue-600 bg-white rounded-lg font-semibold hover:bg-gray-200">
+            Login
+        </button>
+        <button class="px-4 py-2 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900">
+            Sign Up
+        </button>
+            </div>
+        </div>
+    </nav>
+<body>
+    
+</body>
+<script src="main.js"></script>
+</html>
